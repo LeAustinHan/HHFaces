@@ -1,6 +1,6 @@
 //
-//  HHFaceDetectorTests.m
-//  HHFaceDetectorTests
+//  HHFacesDetectorTests.m
+//  HHFacesDetectorTests
 //
 //  Created by LeAustinHan on 14-12-26.
 //  Copyright (c) 2014年 han. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface HHFaceDetectorTests : XCTestCase
+@interface HHFacesDetectorTests : XCTestCase
 
 @end
 
-@implementation HHFaceDetectorTests
+@implementation HHFacesDetectorTests
 
 - (void)setUp {
     [super setUp];

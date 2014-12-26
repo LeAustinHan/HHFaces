@@ -1,18 +1,18 @@
 //
-//  DataViewController.m
-//  HHFaceDetector
+//  ViewController.m
+//  HHFacesDetector
 //
 //  Created by LeAustinHan on 14-12-26.
 //  Copyright (c) 2014年 han. All rights reserved.
 //
 
-#import "DataViewController.h"
+#import "ViewController.h"
 
-@interface DataViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation DataViewController
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,11 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
 }
 
 @end
