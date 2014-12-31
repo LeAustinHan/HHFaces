@@ -7,10 +7,10 @@
         <!--Root View Controller-->
         <scene sceneID="JPn-Os-xHd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0yZ-Lc-eGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="dfu-VX-jEe" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Root View Controller" id="vtB-VW-0an"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0yZ-Lc-eGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="871" y="76"/>
         </scene>
