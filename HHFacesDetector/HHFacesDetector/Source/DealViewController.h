@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParticleView.h"
 
-@interface DealViewController : UIViewController
+@interface DealViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+{
+    UIImageView *_bgAllImgView;
+    UIImageView *_bgFaceLessImgView;
+    UIImageView *_faceImgView;
+}
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+@property (weak, nonatomic) IBOutlet ParticleView *pView;
 
 @end

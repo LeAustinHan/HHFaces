@@ -4,15 +4,80 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="JPn-Os-xHd">
+        <!--View Controller-->
+        <scene sceneID="meA-JY-KsS">
             <objects>
-                <tableViewController id="dfu-VX-jEe" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vtB-VW-0an"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0yZ-Lc-eGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="8u8-cP-oZy" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHh-RD-K6K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JEJ-40-PYd">
+                                <rect key="frame" x="0.0" y="124" width="320" height="448"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="drama_all.jpg" backgroundImage="drama_all.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xlN-Vd-xd6" kind="push" id="jTV-qB-RDK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="前页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AP0-iH-5Vw">
+                                <rect key="frame" x="0.0" y="86" width="320" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bdA-40-7Q0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXe-kS-iar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="76"/>
+            <point key="canvasLocation" x="742" y="76"/>
+        </scene>
+        <!--Deal View Controller-->
+        <scene sceneID="CuR-UY-bDI">
+            <objects>
+                <viewController restorationIdentifier="DealViewController" storyboardIdentifier="DealViewController" id="xlN-Vd-xd6" customClass="DealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1k4-V6-l0i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="B85-29-Pds">
+                                <rect key="frame" x="0.0" y="124" width="320" height="448"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="okC-Sl-ZX8" customClass="ParticleView">
+                                        <rect key="frame" x="155" y="425" width="10" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F9D-zB-Xi9">
+                                        <rect key="frame" x="71" y="147" width="178" height="219"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oR1-Ch-iJr"/>
+                    <connections>
+                        <outlet property="bgView" destination="B85-29-Pds" id="7Xz-Yn-tmP"/>
+                        <outlet property="pView" destination="okC-Sl-ZX8" id="zVt-NF-BWk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7x0-ZA-PcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hR6-2f-Ly1">
@@ -24,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dfu-VX-jEe" kind="relationship" relationship="rootViewController" id="bKE-37-hR7"/>
+                        <segue destination="8u8-cP-oZy" kind="relationship" relationship="rootViewController" id="LxW-i5-0aN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Or-6Z-cWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,6 +97,9 @@
             <point key="canvasLocation" x="331" y="76"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="drama_all.jpg" width="360" height="504"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
